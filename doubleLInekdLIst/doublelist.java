@@ -144,13 +144,8 @@ public class doublelist{
         li.insertAtBegin(8);
         li.insertAtEnd(10);
 
-
-
         // li.deleteByValue(8);
         // li.deleteindex(2);
-
-
-        
         // li.search(6);
 
         li.display();

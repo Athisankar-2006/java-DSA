@@ -134,9 +134,6 @@ public class Main {
         li.insertAtBegin(7);
         li.insertAtBegin(8);
         li.insertAtEnd(10);
-
-
-
         // li.deleteByValue(8);
         // li.deleteindex(2);
 

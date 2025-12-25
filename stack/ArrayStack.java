@@ -1,3 +1,6 @@
+
+
+
 public class ArrayStack{
 
     int size;
@@ -54,4 +57,5 @@ public class ArrayStack{
 
         
     }
+
 }

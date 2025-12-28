@@ -3,9 +3,9 @@ package monotonic;
 import java.util.Arrays;
 import java.util.Stack;
 
-//next greatest element
+//next smallest elemeent
 
-public class nge {
+public class nse {
 
     public static int[] monotonic(int[] arr){
         int n=arr.length;
@@ -14,7 +14,7 @@ public class nge {
 
       for(int i=n-1;i>=0;i--){
 
-        while(!stack.isEmpty() && stack.peek()<=arr[i]){
+        while(!stack.isEmpty() && stack.peek()>=arr[i]){
             stack.pop();
         }
         res[i]=stack.isEmpty()? -1:stack.peek();
@@ -24,11 +24,10 @@ public class nge {
 
     }
 
+        public static void main(String[] args) {
 
-    public static void main(String[] args) {
-
-        int[] arr= {1,2,3,4,5};
-        int[] ans=monotonic(arr);
+       int[] arr= {4,2,1,4,3};
+       int[] ans=monotonic(arr);
 
         System.out.println(" "+Arrays.toString(arr));
         System.out.println(" "+Arrays.toString(ans));

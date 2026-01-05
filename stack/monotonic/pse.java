@@ -25,9 +25,6 @@ public class pse {
     }
 
 
-
-
-
        public static void main(String[] args) {
         int[] arr={4,2,8,12,5};
         int[] result=monotonic(arr);

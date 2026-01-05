@@ -1,11 +1,11 @@
 package queue;
 
-public class queueusingarr {
+public class queueusingarr2 {
+
     static int size=3;
     int arr[];
-    int first=-1;
     int rear=-1;
-    queueusingarr(){
+    queueusingarr2(){
         arr=new int[size];
     }
 
@@ -13,9 +13,8 @@ public class queueusingarr {
     if(rear==size-1){
         throw new IndexOutOfBoundsException("queue is full");
     }
-    if(first==-1 || rear==-1){
+    if(rear==-1){
         arr[++rear]=data;
-        first++;
         return;
     }
     arr[++rear]=data;
@@ -23,11 +22,17 @@ public class queueusingarr {
 
 
     int dequeue(){
-        if(first==-1 || rear==-1 ||first>rear){
+        if(rear==-1){
             throw new IndexOutOfBoundsException("queue is empty");
         }
+        int temp=arr[0];
+        for(int i=1;i<=rear;i++){
+            arr[i-1]=arr[i];
+        }
+        rear--;
+        return temp;
         
-       return arr[first++];
+      
 
     }
 

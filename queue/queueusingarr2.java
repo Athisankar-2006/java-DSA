@@ -39,7 +39,7 @@ public class queueusingarr2 {
 
 
     public static void main(String[] args) {
-        queueusingarr q= new queueusingarr();
+        queueusingarr2 q= new queueusingarr2();
         q.enqueue(10);
         q.enqueue(20);
         q.enqueue(30);
